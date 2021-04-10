@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFE7B050-89FD-43EF-82EF-715B4A82A657}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Chikonohono_Clinic_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Chikonohono_Clinic_Management_System</RootNamespace>
+    <AssemblyName>Chikonohono Clinic Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Chikonohono Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Chikonohono Clinic Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B7B579DE5DF8B53EE8789F8396F13E0F11CAA59D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Chikonohono Clinic Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Medication Form.Designer.vb">
+      <DependentUpon>Add Medication Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Medication Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clinic Management Menu.Designer.vb">
+      <DependentUpon>Clinic Management Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clinic Management Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Account Form.Designer.vb">
+      <DependentUpon>Create Account Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Account Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit and Delete Workers Records.Designer.vb">
+      <DependentUpon>Edit and Delete Workers Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit and Delete Workers Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit and Delete Patient Records.Designer.vb">
+      <DependentUpon>Edit and Delete Patient Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit and Delete Patient Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit  and Delete Medication Records.Designer.vb">
+      <DependentUpon>Edit  and Delete Medication Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit  and Delete Medication Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Existing Medication Records.Designer.vb">
+      <DependentUpon>Existing Medication Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Existing Medication Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.vb">
+      <DependentUpon>Login Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispensary.Designer.vb">
+      <DependentUpon>Dispensary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispensary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Records Menu.Designer.vb">
+      <DependentUpon>Patient Records Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Records Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Window.Designer.vb">
+      <DependentUpon>Main Window.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Window.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Bill Information.Designer.vb">
+      <DependentUpon>Patient Bill Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Bill Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients Registration.Designer.vb">
+      <DependentUpon>Patients Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patients Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Existing Patient Records.Designer.vb">
+      <DependentUpon>Existing Patient Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Existing Patient Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Patient Records.Designer.vb">
+      <DependentUpon>Search Patient Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Patient Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Workers Records.Designer.vb">
+      <DependentUpon>Search Workers Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Workers Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashSreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashSreen.Designer.vb">
+      <DependentUpon>SplashSreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transactions.Designer.vb">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users.Designer.vb">
+      <DependentUpon>users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Workers.Designer.vb">
+      <DependentUpon>View Workers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Workers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workers Registration.Designer.vb">
+      <DependentUpon>Workers Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Workers Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Medication Form.resx">
+      <DependentUpon>Add Medication Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clinic Management Menu.resx">
+      <DependentUpon>Clinic Management Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Account Form.resx">
+      <DependentUpon>Create Account Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit and Delete Workers Records.resx">
+      <DependentUpon>Edit and Delete Workers Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit and Delete Patient Records.resx">
+      <DependentUpon>Edit and Delete Patient Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit  and Delete Medication Records.resx">
+      <DependentUpon>Edit  and Delete Medication Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Existing Medication Records.resx">
+      <DependentUpon>Existing Medication Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispensary.resx">
+      <DependentUpon>Dispensary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Records Menu.resx">
+      <DependentUpon>Patient Records Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Window.resx">
+      <DependentUpon>Main Window.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Bill Information.resx">
+      <DependentUpon>Patient Bill Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients Registration.resx">
+      <DependentUpon>Patients Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Existing Patient Records.resx">
+      <DependentUpon>Existing Patient Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Patient Records.resx">
+      <DependentUpon>Search Patient Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Workers Records.resx">
+      <DependentUpon>Search Workers Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashSreen.resx">
+      <DependentUpon>SplashSreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions.resx">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users.resx">
+      <DependentUpon>users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Workers.resx">
+      <DependentUpon>View Workers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers Registration.resx">
+      <DependentUpon>Workers Registration.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chikonohono Clinic Management System_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
