@@ -1,5 +1,5 @@
 # CCMS
-Native Windows Desktop app for clinic management.
+Native Windows Desktop app for clinic management system.
 
 ### Installation
 1. Install [Microsoft Office](https://www.office.com/)
